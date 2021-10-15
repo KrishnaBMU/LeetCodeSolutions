@@ -7,8 +7,12 @@ import re
 # description: has a list of exclude file patterns (e.g. *.swp) and directories (e.g. .git, readme files, this file)
 
 path = "./"
-contents="# LeetCode Solutions  \nThis repository has unofficial solutions to the challenges at https://leetcode.com/problemset/all/  \n  \n```  \n"
+contents="# LeetCode Solutions  \n"
+contents+="This repository has unofficial solutions to the challenges at https://leetcode.com/problemset/all/  \n  \n"
+contents+="The solutions can be submitted by anyone. See CONTRIBUTING.md for how to contribute.  \n  \n"
+contents+="# Challenges solved, by language and difficulty:  \n"
 
+contents+="```  \n"
 excludefiles = ['.*\.swp', os.path.basename(__file__),'CONTRIBUTING.md', 'README.md']
 # excluded directories should be comma-separated and have the format '^%s{DIR}' % path
 excludedir = ['^%s.git' % path, '^%sconfigs' % path]

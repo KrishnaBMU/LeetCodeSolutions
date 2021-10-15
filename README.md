@@ -1,6 +1,9 @@
 # LeetCode Solutions  
 This repository has unofficial solutions to the challenges at https://leetcode.com/problemset/all/  
   
+The solutions can be submitted by anyone. See CONTRIBUTING.md for how to contribute.  
+  
+# Challenges solved, by language and difficulty:  
 ```  
 /  
 +-- star.cpp  
