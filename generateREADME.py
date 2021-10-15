@@ -26,12 +26,12 @@ for root, dirs, files in os.walk(path):
         prefix="|  "
 
       if (root != './'): 
-        contents+=("  \n{}{}{}/".format(prefix*directory_level, indent*(directory_level), os.path.basename(root)))
+        contents+=("{}{}{}  \n".format(prefix*directory_level, indent*(directory_level), os.path.basename(root)))
       for file in files:
         testme = '(?:% s)' % '|'.join(excludefiles)
         if (re.search(testme,file)): next
         else:
-          contents+=("\n{}{}{}".format(prefix*(directory_level+1), indent, file))
+          contents+=("{}{}{}  \n".format(prefix*(directory_level+1), indent, file))
 
 
 with open("README.md", "w") as outfile:
