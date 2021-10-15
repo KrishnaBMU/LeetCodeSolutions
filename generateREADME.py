@@ -7,7 +7,7 @@ import re
 # description: has a list of exclude file patterns (e.g. *.swp) and directories (e.g. .git, readme files, this file)
 
 path = "./"
-contents="# LeetCode Solutions\nThis repository has unofficial solutions to the challenges at https://leetcode.com/problemset/all/\n"
+contents="# LeetCode Solutions\nThis repository has unofficial solutions to the challenges at https://leetcode.com/problemset/all/\nfoo"
 
 excludefiles = ['.*\.swp', os.path.basename(__file__),'CONTRIBUTING.md', 'README.md']
 # excluded directories should be comma-separated and have the format '^%s{DIR}' % path
@@ -34,9 +34,5 @@ for root, dirs, files in os.walk(path):
           contents+=("\n{}{}{}".format(prefix*(directory_level+1), indent, file))
 
 
-ToC=["# LeetCode Solutions", "# description: Here are the files in the repo, with a title and description.","# description: generated from generate_readme.py",""]
-
 with open("README.md", "w") as outfile:
   outfile.write(contents)
-#  for i in ToC:
-#    outfile.write(i + "\n")
