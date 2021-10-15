@@ -15,7 +15,6 @@ excludedir = ['^%s.git' % path, '^%sconfigs' % path]
 for root, dirs, files in os.walk(path):
     directory_level = root.replace(path, "")
     directory_level = directory_level.count(os.sep)
-    indent = " " * 4
     prefix = ""
     indent = "+-- "
     testme = '(?:% s)' % '|'.join(excludedir)
@@ -24,9 +23,7 @@ for root, dirs, files in os.walk(path):
     else:
       if (directory_level > 0):
         prefix="|  "
-
-      if (root != './'): 
-        contents+=("{}{}{}  \n".format(prefix*directory_level, indent*(directory_level), os.path.basename(root)))
+      contents+=("{}{}{}/  \n".format(prefix*directory_level, indent*(directory_level), os.path.basename(root)))
       for file in files:
         testme = '(?:% s)' % '|'.join(excludefiles)
         if (re.search(testme,file)): next
