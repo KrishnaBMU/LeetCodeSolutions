@@ -10,7 +10,7 @@ path = "./"
 contents="# LeetCode Solutions  \n"
 contents+="This repository has unofficial solutions to the challenges at https://leetcode.com/problemset/all/  \n  \n"
 contents+="The solutions can be submitted by anyone. See CONTRIBUTING.md for how to contribute.  \n  \n"
-contents+="# Challenges solved, by language and difficulty:  \n"
+contents+="# Challenges solved, by language and difficulty:  \nThis is a display of the code tree, minus administrative files.  \n  \n"
 
 contents+="```  \n"
 excludefiles = ['.*\.swp', os.path.basename(__file__),'CONTRIBUTING.md', 'README.md']
