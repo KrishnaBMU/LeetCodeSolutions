@@ -1,12 +1,6 @@
 # LeetCode Solutions  
 This repository has unofficial solutions to the challenges at https://leetcode.com/problemset/all/  
   
-.  
-+-- _config.yml  
-+-- _drafts  
-|   +-- begin-with-the-crazy-ideas.textile  
-|   +-- on-simplicity-in-technology.markdown  
-
 +-- star.cpp  
 +-- Length of Last Word  
 Python  
