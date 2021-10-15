@@ -3,7 +3,9 @@ This repository has unofficial solutions to the challenges at https://leetcode.c
   
 The solutions can be submitted by anyone. See CONTRIBUTING.md for how to contribute.  
   
-# Challenges solved, by language and difficulty:  
+# Challenges solved, by language and difficulty  
+This is a display of the code tree, minus administrative files.  
+  
 ```  
 /  
 +-- star.cpp  
