@@ -1,4 +1,3 @@
-#Python - Easy
 class Solution:
     def romanToInt(self, s: str) -> int:
         num_value = 0
