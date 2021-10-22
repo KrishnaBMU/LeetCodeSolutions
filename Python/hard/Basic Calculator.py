@@ -42,4 +42,3 @@ class Solution:
                 stack.append(temp)
                 #print(stack)
         return stack.pop()
-        
