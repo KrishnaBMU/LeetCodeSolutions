@@ -20,6 +20,7 @@ Python/
 |  +-- hard/  
 |  |  +-- sudokuSolver.py  
 |  |  +-- MedianOfArrays.py  
+|  |  +-- Basic Calculator.py
 |  +-- medium/  
 |  |  +-- PerfectSquares.py  
 |  |  +-- reverse_int.py  
